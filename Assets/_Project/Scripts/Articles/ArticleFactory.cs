@@ -9,6 +9,7 @@ public class ArticleFactory
     }
 
     public void SpawnArticle(Article prefab, Vector2 basePos) {
+        if (prefab == null) return;
         Article art = GameObject.Instantiate(prefab, basePos, Quaternion.identity);
         art.Init(basePos, _grid);
     }
