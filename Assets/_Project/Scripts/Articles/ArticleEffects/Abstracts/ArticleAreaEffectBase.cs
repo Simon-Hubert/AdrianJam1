@@ -1,10 +1,10 @@
 using System;
 using UnityEngine;
 
-public class ArticleEffect : MonoBehaviour
+public abstract class ArticleAreaEffectBase : ArticleEffectBase
 {
     [Flags]
-    private enum AreaOfEffect
+    protected enum AreaOfEffect
     {
         ALL = 1 << 0,
         ADJACENT = 1 << 1,
@@ -15,8 +15,8 @@ public class ArticleEffect : MonoBehaviour
         UP = 1 << 6,
         DOWN = 1 << 7
     }
-
-    [SerializeField, ] private AreaOfEffect _area;
+    
+    [SerializeField] protected AreaOfEffect _targetArea;
     [SerializeField] private Tags _targetTag;
-    [SerializeField] private float _pointMultiplier;
+    [SerializeField] private bool _targetSelf;
 }

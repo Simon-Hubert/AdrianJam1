@@ -15,6 +15,7 @@ public class Article : MonoBehaviour
 {
     [SerializeField] private ArticleShape _shape;
     [SerializeField] private ArticleGrid _grid;
+    [SerializeField] private Tags _tags;
     
     private (int i, int j) _gridPos;
     private bool _placed;
