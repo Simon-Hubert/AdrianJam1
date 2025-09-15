@@ -1,16 +1,15 @@
+using System;
 using UnityEngine;
 
 public class DeckManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    [SerializeField] private Deck _currentDeck;
+
+    private void Awake() {
+        _currentDeck.ResetDeckInstance();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public Article Draw() {
+        return _currentDeck.Draw();
     }
 }

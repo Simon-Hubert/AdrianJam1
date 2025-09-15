@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -27,10 +28,18 @@ public class Deck : ScriptableObject
 
     public void ResetDeckInstance() {
         _deck = new List<Article>(_baseDeck);
+        Debug.Log($"DeckCount : {_deck.Count}");
         Shuffle();
     }
 
     public void Shuffle() {
         _deck = _deck.OrderBy(x => Random.value).ToList();
+    }
+
+    public Article Draw() {
+        if (_deck.Count < 1) return null;
+        Article draw = _deck[0];
+        _deck.Remove(draw);
+        return draw;
     }
 }

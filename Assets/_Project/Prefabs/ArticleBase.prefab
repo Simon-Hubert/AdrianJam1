@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232b169450910104e98eb44050cfcb52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shape: {fileID: 11400000, guid: 72f188bf88f49474e82a247692782d0c, type: 2}
+  _shape: {fileID: 11400000, guid: 90ea669eb2cdf5f4d8397b522c32b3d6, type: 2}
   _grid: {fileID: 0}
 --- !u!65 &2815475428329373971
 BoxCollider:
