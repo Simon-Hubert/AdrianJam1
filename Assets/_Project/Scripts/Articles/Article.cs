@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 public class Article : MonoBehaviour
 {
@@ -12,11 +13,18 @@ public class Article : MonoBehaviour
     private bool _placed;
     private bool _dragging;
 
+    private Vector2 _basePos;
+
     private Coroutine _draggingRoutine;
     private Camera _camera;
 
     public ArticleShape Shape => _shape;
     public (int i, int j) GridPos => _gridPos;
+
+    public void Init(Vector2 basePos, ArticleGrid gridRef) {
+        _basePos = basePos;
+        _grid = gridRef;
+    }
 
     private void Awake() {
         _camera = Camera.main;
@@ -33,7 +41,7 @@ public class Article : MonoBehaviour
 
     private void OnMouseUp() {
         StopDragging();
-        _grid.PlaceArticle(this, transform.position);
+        transform.position = _grid.PlaceArticle(this, transform.position) ? _grid.SnapToGrid(transform.position) : _basePos;
     }
 
     private void StartDragging() {
@@ -44,7 +52,7 @@ public class Article : MonoBehaviour
     private void StopDragging() {
         if (_dragging) {
             _dragging = false;
-            StopCoroutine(_draggingRoutine);
+            if(_draggingRoutine != null) StopCoroutine(_draggingRoutine);
         }
     }
     
@@ -63,6 +71,7 @@ public class Article : MonoBehaviour
         while (_dragging) {
             transform.position = (Vector2)_camera.ScreenToWorldPoint(Input.mousePosition);
             //TODO Juice it up !
+            _grid.ShowPreview(_shape, transform.position);
             yield return 0;
         }
     }

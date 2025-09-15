@@ -2,12 +2,17 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(Grid))]
 public class ArticleGrid : MonoBehaviour
 {
     private Grid _grid;
     [SerializeField] private Vector2Int _gridHalfSize;
+    [SerializeField] private Tilemap _tilemap;
+    [SerializeField] private TileBase _right;
+    [SerializeField] private TileBase _wrong;
+
     private bool[,] _board;
     private List<Article> _placedArticle = new List<Article>();
 
@@ -40,8 +45,9 @@ public class ArticleGrid : MonoBehaviour
         return true;
     }
 
-    public void PlaceArticle(Article article, Vector2 pos) {
-        if (!IsPlacementValid(article.Shape, pos)) return;
+    public bool PlaceArticle(Article article, Vector2 pos) {
+        _tilemap.ClearAllTiles();
+        if (!IsPlacementValid(article.Shape, pos)) return false;
         _placedArticle.Add(article);
         Vector2Int posIndex = WorldToIndexPos(pos);
         for (int i = 0; i < article.Shape.Rows; i++) {
@@ -50,6 +56,8 @@ public class ArticleGrid : MonoBehaviour
             }
         }
         article.Place((posIndex.x, posIndex.y));
+
+        return true;
     }
 
     public void RemoveArticle(Article article) {
@@ -74,4 +82,19 @@ public class ArticleGrid : MonoBehaviour
     public bool this[int i, int j] {
         get => _board[i,j];
     }
+
+    public void ShowPreview(ArticleShape shape, Vector3 position) {
+        _tilemap.ClearAllTiles();
+        TileBase tile = IsPlacementValid(shape, position) ? _right : _wrong;
+        
+        for (int i = 0; i < shape.Rows; i++) {
+            for (int j = 0; j < shape.Columns; j++) {
+                if (shape[i, j]) {
+                    _tilemap.SetTile(_grid.WorldToCell(position) + new Vector3Int(i,-j,0), tile);
+                }
+            }
+        }
+    }
+    
+
 }
