@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
+[Flags]
+public enum Tags
+{
+    Gauche = 1 << 0,
+    Droite = 1 << 1,
+}
+
 public class Article : MonoBehaviour
 {
     [SerializeField] private ArticleShape _shape;
