@@ -534,7 +534,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715951889}
-  - component: {fileID: 1715951888}
+  - component: {fileID: 1715951892}
+  - component: {fileID: 1715951891}
   - component: {fileID: 1715951890}
   m_Layer: 0
   m_Name: GameObject
@@ -543,22 +544,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1715951888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715951887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07634b41513524149a94d716e3ebe33d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _targetArea: 0
-  _targetTag: 0
-  _operation: 0
-  _value: 0
 --- !u!4 &1715951889
 Transform:
   m_ObjectHideFlags: 0
@@ -583,13 +568,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 1715951887}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07634b41513524149a94d716e3ebe33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetArea: 0
+  _targetTag: 0
+  _targetSelf: 0
+  _operation: 0
+  _value: 0
+--- !u!114 &1715951891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715951887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07fd8200c53a5eb4a9344372308d83a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _targetArea: 0
   _targetTag: 0
+  _targetSelf: 0
   _tagsToRemove: 0
   _tagsToAdd: 0
+--- !u!114 &1715951892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715951887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0591b917bf68cac448b9a1181824d250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetArea: 0
+  _targetTag: 0
+  _targetSelf: 0
+  _effectPrefab: {fileID: 0}
 --- !u!1 &2009365975
 GameObject:
   m_ObjectHideFlags: 0

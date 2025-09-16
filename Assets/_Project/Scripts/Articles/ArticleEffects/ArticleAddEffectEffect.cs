@@ -9,5 +9,10 @@ public class ArticleAddEffectEffect : ArticleAreaEffectBase
 
     [SerializeField] private ArticleEffectBase _effectPrefab;
     
-    //TODO Implementation
+    public override ArticleExecuteEffect GetEffect() { 
+        return article =>
+        {
+            throw new System.NotImplementedException();
+        };
+    }
 }

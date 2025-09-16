@@ -4,10 +4,16 @@ using UnityEngine;
 public class ArticleEffect : ArticleAreaEffectBase
 {
     [SerializeField] private TypeOfEffect _operation;
-    [SerializeField] private float _value;
+    [SerializeField] private int _value;
     
-    public override int Priority => 1;
+    public override int Priority => 0;
     protected override ArticleEffectBase Copy() => throw new NotImplementedException();
 
-    //TODO Implementation
+    public override ArticleExecuteEffect GetEffect() {
+        return article =>
+        {
+            article.Value += _value;
+        };
+    }
+    
 }

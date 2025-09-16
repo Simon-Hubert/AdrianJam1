@@ -16,4 +16,5 @@ public abstract class ArticleEffectBase : MonoBehaviour
     }
     
     protected abstract ArticleEffectBase Copy();
+    public abstract ArticleExecuteEffect GetEffect();
 }

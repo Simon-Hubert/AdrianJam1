@@ -16,6 +16,7 @@ public class Article : MonoBehaviour
     [SerializeField] private ArticleShape _shape;
     [SerializeField] private ArticleGrid _grid;
     [SerializeField] private Tags _tags;
+    [SerializeField] private int _baseValue;
     
     private (int i, int j) _gridPos;
     private bool _placed;
@@ -26,8 +27,20 @@ public class Article : MonoBehaviour
     private Coroutine _draggingRoutine;
     private Camera _camera;
 
+    private int _value;
+
     public ArticleShape Shape => _shape;
     public (int i, int j) GridPos => _gridPos;
+
+    public int Value {
+        get => _value;
+        set => _value = value;
+    }
+
+    public int BaseValue {
+        get => _baseValue;
+        set => _baseValue = value;
+    }
 
     public void Init(Vector2 basePos, ArticleGrid gridRef) {
         _basePos = basePos;

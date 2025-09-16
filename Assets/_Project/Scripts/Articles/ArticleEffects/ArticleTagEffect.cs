@@ -8,5 +8,10 @@ public class ArticleTagEffect : ArticleAreaEffectBase
     [SerializeField] private Tags _tagsToRemove;
     [SerializeField] private Tags _tagsToAdd;
     
-    //TODO Implementation
+    public override ArticleExecuteEffect GetEffect() { 
+        return article =>
+        {
+            throw new System.NotImplementedException();
+        };
+    }
 }
