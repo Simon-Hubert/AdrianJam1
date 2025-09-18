@@ -12,6 +12,7 @@ public class ArticleValueEffect : ArticleEffectBase
         {
             if (_definitive) {
                 article.BaseValue += _value;
+                article.Value += _value;
             }
             else {
                 article.Value += _value;

@@ -33,6 +33,7 @@ public class ArticleEffect : ArticleAreaEffectBase
     private void AddValueTo(Article article) {
         if (_definitive) {
             article.BaseValue += Mathf.FloorToInt(_value);
+            article.Value += Mathf.FloorToInt(_value);
         }
         else {
             article.Value += Mathf.FloorToInt(_value);
@@ -42,6 +43,7 @@ public class ArticleEffect : ArticleAreaEffectBase
     private void MultiplyValue(Article article) {
         if (_definitive) {
             article.BaseValue = Mathf.FloorToInt(article.BaseValue * _value);
+            article.Value = Mathf.FloorToInt(article.Value * _value);
         }
         else {
             article.Value = Mathf.FloorToInt(article.Value * _value);

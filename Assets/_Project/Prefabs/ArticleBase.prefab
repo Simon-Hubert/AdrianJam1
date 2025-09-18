@@ -481,6 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07fd8200c53a5eb4a9344372308d83a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _definitive: 0
   _targetArea: 0
   _targetTag: 1
   _targetSelf: 0
@@ -498,6 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07634b41513524149a94d716e3ebe33d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _definitive: 0
   _targetArea: 2
   _targetTag: 2
   _targetSelf: 0

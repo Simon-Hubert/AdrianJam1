@@ -20,6 +20,8 @@ public class ArticleTagEffect : ArticleAreaEffectBase
                 if (_definitive) {
                     art.BaseTags |= _tagsToAdd;
                     art.BaseTags &= ~_tagsToRemove;
+                    art.CurrentTags |= _tagsToAdd;
+                    art.CurrentTags &= ~_tagsToRemove;
                 }
                 else {
                     art.CurrentTags |= _tagsToAdd;
