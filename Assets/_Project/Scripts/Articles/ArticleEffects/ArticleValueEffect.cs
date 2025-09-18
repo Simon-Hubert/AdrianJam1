@@ -7,10 +7,10 @@ public class ArticleValueEffect : ArticleEffectBase
     
     [SerializeField] private int _value;
     
-    public override ArticleExecuteEffect GetEffect() { 
-        return article =>
+    public override ArticleExecuteEffect GetEffect() {
+        return (article, grid) =>
         {
-            throw new System.NotImplementedException();
+            article.Value += _value;
         };
     }
 }

@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
+public struct GridCell
+{
+    public bool Occupied;
+    public Article Article;
+    
+    
+}
+
 [RequireComponent(typeof(Grid))]
 public class ArticleGrid : MonoBehaviour
 {
@@ -13,14 +21,14 @@ public class ArticleGrid : MonoBehaviour
     [SerializeField] private TileBase _right;
     [SerializeField] private TileBase _wrong;
 
-    private bool[,] _board;
+    private GridCell[,] _board;
     private List<Article> _placedArticle = new List<Article>();
 
     public Vector2Int GridHalfSize => _gridHalfSize;
 
     private void Awake() {
         _grid = GetComponent<Grid>();
-        _board = new bool[_gridHalfSize.x * 2, _gridHalfSize.y * 2];
+        _board = new GridCell[_gridHalfSize.x * 2, _gridHalfSize.y * 2];
     }
     
     public Vector2 SnapToGrid(Vector2 pos) {
@@ -39,7 +47,7 @@ public class ArticleGrid : MonoBehaviour
 
         for (int i = 0; i < shape.Rows; i++) {
             for (int j = 0; j < shape.Columns; j++) {
-                if (_board[posIndex.x + i, posIndex.y + j] && shape[i, j]) return false;
+                if (_board[posIndex.x + i, posIndex.y + j].Occupied && shape[i, j]) return false;
             }
         }
         return true;
@@ -52,7 +60,11 @@ public class ArticleGrid : MonoBehaviour
         Vector2Int posIndex = WorldToIndexPos(pos);
         for (int i = 0; i < article.Shape.Rows; i++) {
             for (int j = 0; j < article.Shape.Columns; j++) {
-                _board[posIndex.x + i, posIndex.y + j] = article.Shape[i, j] || _board[posIndex.x + i, posIndex.y + j];
+                _board[posIndex.x + i, posIndex.y + j] = new GridCell()
+                {
+                    Occupied = article.Shape[i, j] || _board[posIndex.x + i, posIndex.y + j].Occupied,
+                    Article = article.Shape[i, j] ? article : null
+                };
             }
         }
         article.Place((posIndex.x, posIndex.y));
@@ -65,7 +77,11 @@ public class ArticleGrid : MonoBehaviour
         for (int i = 0; i < article.Shape.Rows; i++) {
             for (int j = 0; j < article.Shape.Columns; j++) {
                 if (article.Shape[i, j]) {
-                    _board[article.GridPos.i + i, article.GridPos.j + j] = false;
+                    _board[article.GridPos.i + i, article.GridPos.j + j] = new GridCell()
+                    {
+                        Occupied = false,
+                        Article = null
+                    };
                 }
             }
         }
@@ -80,7 +96,7 @@ public class ArticleGrid : MonoBehaviour
     }
     
     public bool this[int i, int j] {
-        get => _board[i,j];
+        get => _board[i,j].Occupied;
     }
 
     public void ShowPreview(ArticleShape shape, Vector3 position) {

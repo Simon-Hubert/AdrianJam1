@@ -9,10 +9,10 @@ public class ArticleAddEffectEffect : ArticleAreaEffectBase
 
     [SerializeField] private ArticleEffectBase _effectPrefab;
     
-    public override ArticleExecuteEffect GetEffect() { 
-        return article =>
+    public override ArticleExecuteEffect GetEffect() {
+        return (article, grid) =>
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         };
     }
 }

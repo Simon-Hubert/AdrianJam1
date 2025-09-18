@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public delegate void ArticleExecuteEffect(Article article);
+public delegate void ArticleExecuteEffect(Article article, ArticleGrid grid);
 
 public struct EffectHandle
 {

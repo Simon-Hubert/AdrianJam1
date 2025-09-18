@@ -10,9 +10,9 @@ public class ArticleEffect : ArticleAreaEffectBase
     protected override ArticleEffectBase Copy() => throw new NotImplementedException();
 
     public override ArticleExecuteEffect GetEffect() {
-        return article =>
+        return (article, grid) =>
         {
-            article.Value += _value;
+            throw new NotImplementedException();
         };
     }
     

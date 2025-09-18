@@ -5,6 +5,7 @@ using UnityEngine;
 public class EffectExecutor : MonoBehaviour
 {
     private List<EffectManager> _effectManagers;
+    private ArticleGrid _grid;
 
     public void RegisterEffectManager(EffectManager em) {
         _effectManagers.Add(em);
@@ -23,7 +24,7 @@ public class EffectExecutor : MonoBehaviour
         effects = effects.OrderBy(x => x.priority).Reverse().ToArray();
 
         foreach (EffectHandle effect in effects) {
-            effect.effect(effect.articleRef);
+            effect.effect(effect.articleRef, _grid);
         }
     }
 }
