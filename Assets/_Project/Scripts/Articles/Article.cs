@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using UnityEngine.Tilemaps;
 
 [Flags]
@@ -15,7 +17,7 @@ public class Article : MonoBehaviour
 {
     [SerializeField] private ArticleShape _shape;
     [SerializeField] private ArticleGrid _grid;
-    [SerializeField] private Tags _tags;
+    [SerializeField] private Tags _baseTags;
     [SerializeField] private int _baseValue;
     
     private (int i, int j) _gridPos;
@@ -27,7 +29,9 @@ public class Article : MonoBehaviour
     private Coroutine _draggingRoutine;
     private Camera _camera;
 
-    private int _value;
+    [ShowNonSerializedField] private int _value;
+    [ShowNonSerializedField] private Tags _tags;
+
 
     public ArticleShape Shape => _shape;
     public (int i, int j) GridPos => _gridPos;
@@ -40,6 +44,15 @@ public class Article : MonoBehaviour
     public int BaseValue {
         get => _baseValue;
         set => _baseValue = value;
+    }
+
+    public Tags BaseTags {
+        get => _baseTags;
+        set => _baseTags = value;
+    }
+    public Tags CurrentTags {
+        get => _tags;
+        set => _tags = value;
     }
 
     public void Init(Vector2 basePos, ArticleGrid gridRef) {
@@ -80,7 +93,6 @@ public class Article : MonoBehaviour
     public void Place((int i, int j) gridPosition) {
         _gridPos = gridPosition;
         _placed = true;
-        Debug.Log("Placed");
     }
 
     public void RemoveFromBoard() {

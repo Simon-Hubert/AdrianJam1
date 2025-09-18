@@ -18,7 +18,6 @@ public class EffectManager : MonoBehaviour
         _owner = GetComponent<Article>();
     }
 
-
     public EffectHandle[] GetAllEffectHandles() {
         ArticleEffectBase[] effects = GetComponents<ArticleEffectBase>();
         EffectHandle[] effectHandles = new EffectHandle[effects.Length];
@@ -30,5 +29,15 @@ public class EffectManager : MonoBehaviour
         }
         
         return effectHandles;
+    }
+
+    public void ClearAddedEffects() {
+        ArticleEffectBase[] effects = GetComponents<ArticleEffectBase>();
+
+        foreach (ArticleEffectBase effect in effects) {
+            if (!effect.IsOriginal) {
+                Destroy(effect);
+            }
+        }
     }
 }

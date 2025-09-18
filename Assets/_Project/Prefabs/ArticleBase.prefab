@@ -394,6 +394,9 @@ GameObject:
   - component: {fileID: 7006425156910396809}
   - component: {fileID: 2472453248826748828}
   - component: {fileID: 2815475428329373971}
+  - component: {fileID: 5118953707695207567}
+  - component: {fileID: 4297976473617478942}
+  - component: {fileID: -9096153329849667778}
   m_Layer: 0
   m_Name: ArticleBase
   m_TagString: Untagged
@@ -431,6 +434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shape: {fileID: 11400000, guid: 90ea669eb2cdf5f4d8397b522c32b3d6, type: 2}
   _grid: {fileID: 0}
+  _baseTags: 1
+  _baseValue: 100
 --- !u!65 &2815475428329373971
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -452,3 +457,49 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.56, y: 2.56, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5118953707695207567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574213724254568145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8221886d4e29a8441a06b1eba62e8b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4297976473617478942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574213724254568145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fd8200c53a5eb4a9344372308d83a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetArea: 0
+  _targetTag: 1
+  _targetSelf: 0
+  _tagsToRemove: 1
+  _tagsToAdd: 2
+--- !u!114 &-9096153329849667778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574213724254568145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07634b41513524149a94d716e3ebe33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetArea: 2
+  _targetTag: 2
+  _targetSelf: 0
+  _operation: 0
+  _value: 15

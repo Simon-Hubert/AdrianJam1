@@ -45,7 +45,7 @@ public class ArticleGridEditor : Editor
             EditorGUILayout.BeginHorizontal(headerColumnStyle);
             for (int row = 0; row < Instance.GridHalfSize.x * 2; row++) {
                 EditorGUILayout.BeginHorizontal(rowStyle);
-                EditorGUILayout.Toggle(Instance[row, column], dataFieldStyle);
+                EditorGUILayout.Toggle(Instance[row, column].Occupied, dataFieldStyle);
                 EditorGUILayout.EndHorizontal();
             }
             EditorGUILayout.EndHorizontal();

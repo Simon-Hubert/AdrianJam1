@@ -25,6 +25,8 @@ public class ArticleGrid : MonoBehaviour
     private List<Article> _placedArticle = new List<Article>();
 
     public Vector2Int GridHalfSize => _gridHalfSize;
+    public Vector2Int GridSize => new Vector2Int(_board.GetLength(0), _board.GetLength(1));
+    public Article[] PlacedArticles => _placedArticle.ToArray();
 
     private void Awake() {
         _grid = GetComponent<Grid>();
@@ -95,8 +97,8 @@ public class ArticleGrid : MonoBehaviour
         return indexPos;
     }
     
-    public bool this[int i, int j] {
-        get => _board[i,j].Occupied;
+    public GridCell this[int i, int j] {
+        get => _board[i,j];
     }
 
     public void ShowPreview(ArticleShape shape, Vector3 position) {
