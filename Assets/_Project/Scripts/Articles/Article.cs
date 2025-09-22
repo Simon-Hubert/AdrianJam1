@@ -11,6 +11,12 @@ public enum Tags
 {
     Gauche = 1 << 0,
     Droite = 1 << 1,
+    Centre = 1 << 2,
+    Immigration = 1 << 3,
+    Social = 1 << 4,
+    Gouvernement = 1 << 5,
+    Agronomie = 1 << 6,
+
 }
 
 public class Article : MonoBehaviour
@@ -19,7 +25,10 @@ public class Article : MonoBehaviour
     [SerializeField] private ArticleGrid _grid;
     [SerializeField] private Tags _baseTags;
     [SerializeField] private int _baseValue;
-    
+
+    [SerializeField] private string _description;
+    [SerializeField] private string _name;
+
     private (int i, int j) _gridPos;
     private bool _placed;
     private bool _dragging;
