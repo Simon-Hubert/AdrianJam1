@@ -20,7 +20,12 @@ public class ArticleValueEffect : ArticleEffectBase
             
         };
     }
-    
+    public override ToolTipInfo[] GetToolTipInfo() {
+        ToolTipInfo toolTip = new ToolTipInfo();
+        toolTip.Text = $"L'article gagne {_value} électeurs.";
+        return new[] { toolTip };
+    }
+
     public void Init(int value, bool definitive, bool def) {
         _value = value;
         _definitive = definitive;

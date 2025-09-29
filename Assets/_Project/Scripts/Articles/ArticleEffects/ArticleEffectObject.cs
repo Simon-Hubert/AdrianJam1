@@ -49,4 +49,63 @@ public class ArticleEffectObject : ScriptableObject
                 throw new ArgumentOutOfRangeException();
         }
     }
+    public string GetToolTipString() {
+        switch (_type) {
+            case EffectType.RawValue:
+                return RawValueToolTip();
+            case EffectType.Effect:
+                return EffectToolTip();
+            case EffectType.TagEffect:
+                return TagsToolTip();
+            case EffectType.AddEffect:
+                return AddEffectToolTip();
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }
+    
+    private string AddEffectToolTip() {
+        string s = ToolTipConfig.GetTargetingString(targetArea, targetTag);
+        s += "gagnent l'effet : \"";
+        s += effect.GetToolTipString() + "\"";
+        return s;
+    }
+
+    private string TagsToolTip() {
+        
+        string s = ToolTipConfig.GetTargetingString(targetArea, targetTag);
+        if (tagsToRemove != 0) {
+            s += "perdent les tags " + ToolTipConfig.GetTagString(tagsToRemove);
+        }
+
+        if (tagsToRemove != 0 && tagsToAdd != 0) {
+            s += " et ";
+        }
+        
+        if (tagsToAdd != 0) {
+            s += "gagnent les tags " + ToolTipConfig.GetTagString(tagsToAdd);
+        }
+
+        s += ".";
+        return s;
+    }
+
+    private string EffectToolTip() {
+        string s = ToolTipConfig.GetTargetingString(targetArea, targetTag);
+        switch (operation) {
+            case ArticleEffectBase.TypeOfEffect.ADD:
+                s += $"gagnent {value} electeurs.";
+                break;
+            case ArticleEffectBase.TypeOfEffect.MULTIPLY:
+                s += $"multiplient leurs electeurs par {value}.";
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+        return s;
+    }
+    
+    private string RawValueToolTip() {
+        return $"L'article gagne {value} électeurs.";
+    }
 }

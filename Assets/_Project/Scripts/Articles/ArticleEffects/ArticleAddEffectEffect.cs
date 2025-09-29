@@ -20,6 +20,14 @@ public class ArticleAddEffectEffect : ArticleAreaEffectBase
             }
         };
     }
+    
+    public override ToolTipInfo[] GetToolTipInfo() {
+        ToolTipInfo toolTip = new ToolTipInfo();
+        toolTip.Text = ToolTipConfig.GetTargetingString(_targetArea, _targetTag);
+        toolTip.Text += "gagnent l'effet : \"";
+        toolTip.Text += _effect.GetToolTipString() + "\"";
+        return new[] { toolTip };
+    }
 
     public void Init(AreaOfEffect aoe, Tags targetTags, bool targetSelf, ArticleEffectObject effect, bool definitive, bool def) {
         _targetArea = aoe;

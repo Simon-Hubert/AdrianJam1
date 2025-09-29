@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2114bdc8544297b417dfefe9f1e410, type: 3}
+  m_Name: TagsStyle
+  m_EditorClassIdentifier: 
+  m_StyleList:
+  - m_Name: Gauche
+    m_HashCode: -1438944867
+    m_OpeningDefinition: <color="red"><b>
+    m_ClosingDefinition: </color></b>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d00000022000000720000006500000064000000220000003e0000003c000000620000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e0000003c0000002f000000620000003e000000
+  - m_Name: Droite
+    m_HashCode: -1690447647
+    m_OpeningDefinition: <color="blue">
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d00000022000000620000006c0000007500000065000000220000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: Centre
+    m_HashCode: -1591113621
+    m_OpeningDefinition: <color="green">
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d00000022000000670000007200000065000000650000006e000000220000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: Immigration
+    m_HashCode: 2070631144
+    m_OpeningDefinition: <color=#555555>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000003500000035000000350000003500000035000000350000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: Social
+    m_HashCode: -962287493
+    m_OpeningDefinition: <color=#FFFF00>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000004600000046000000460000004600000030000000300000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: Gouvernement
+    m_HashCode: -1601473147
+    m_OpeningDefinition: <color=#00FFFF>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000003000000030000000460000004600000046000000460000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: Agronomie
+    m_HashCode: -1201723621
+    m_OpeningDefinition: <color="green"><i>
+    m_ClosingDefinition: </i></color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d00000022000000670000007200000065000000650000006e000000220000003e0000003c000000690000003e000000
+    m_ClosingTagArray: 3c0000002f000000690000003e0000003c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: Normal
+    m_HashCode: -1183493901
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
