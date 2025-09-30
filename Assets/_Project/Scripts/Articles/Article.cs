@@ -16,6 +16,23 @@ public enum Tags
     Social = 1 << 4,
     Gouvernement = 1 << 5,
     Agronomie = 1 << 6,
+    Depute = 1 << 7,
+    Economie = 1 << 8,
+    Droit = 1<<9,
+    Impots = 1 << 10,
+    Infrastructure = 1 << 11,
+    Sans_abri = 1 << 12,
+    Travail = 1 << 13,
+    Code_de_la_route = 1 << 14,
+    Militaire = 1 << 15,
+    Culture = 1 << 16,
+    Maritime = 1 << 17,
+    Raymond = 1 << 18,
+    Ecologie = 1 << 19,
+    Jeunesse = 1 << 20,
+    Education = 1 << 21,
+    Stupefiant = 1 << 22,
+    Mode = 1 << 23,
 
 }
 
