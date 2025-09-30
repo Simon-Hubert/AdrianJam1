@@ -8,8 +8,14 @@ public class ToolTip : MonoBehaviour
     [SerializeField] private GameObject _titleTipsPrefab;
     [SerializeField] private GameObject _tipPrefab;
     [SerializeField] private GameObject _tagTipsPrefab;
+
+    private RectTransform _rectTransform;
     
-    private List<GameObject> _toolTips = new List<GameObject>();
+    private readonly List<GameObject> _toolTips = new List<GameObject>();
+
+    private void Awake() {
+        _rectTransform = GetComponent<RectTransform>();
+    }
 
     public void Show(ToolTipInfo[] infos) {
         foreach (ToolTipInfo info in infos) {
@@ -43,5 +49,21 @@ public class ToolTip : MonoBehaviour
             text.SetText(ToolTipConfig.GetTagString(info.Tags));
             _toolTips.Add(text.gameObject);
         }
+    }
+
+    private void Update() {
+        Vector2 mousePos = Input.mousePosition;
+        float pivotX = mousePos.x/Screen.width;
+        float pivotY = mousePos.y/Screen.height;
+
+        pivotX = pivotX > 0.5 ? 1f : 0f;
+        pivotY = pivotY > 0.5 ? 1f : 0f;
+        _rectTransform.pivot = new Vector2(pivotX, pivotY);
+        
+        _rectTransform.position = Camera.main.ScreenToWorldPoint(mousePos);
+        var vector3 = _rectTransform.position;
+        vector3.z = 90;
+        _rectTransform.position = vector3;
+
     }
 }
