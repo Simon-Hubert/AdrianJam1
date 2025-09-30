@@ -36,6 +36,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 1896379424718511030, guid: d370695b4fb25e642b22e5f85b3c6c0c, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3046511306946253562, guid: d370695b4fb25e642b22e5f85b3c6c0c, type: 3}
       propertyPath: m_Name
       value: Text

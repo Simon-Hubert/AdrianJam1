@@ -9,6 +9,8 @@ public class ToolTip : MonoBehaviour
     [SerializeField] private GameObject _tipPrefab;
     [SerializeField] private GameObject _tagTipsPrefab;
 
+    [SerializeField] private float _distance;
+
     private RectTransform _rectTransform;
     
     private readonly List<GameObject> _toolTips = new List<GameObject>();
@@ -61,8 +63,14 @@ public class ToolTip : MonoBehaviour
         _rectTransform.pivot = new Vector2(pivotX, pivotY);
         
         _rectTransform.position = Camera.main.ScreenToWorldPoint(mousePos);
-        var vector3 = _rectTransform.position;
+        Vector3 vector3 = _rectTransform.position;
+
+        pivotX = pivotX * 2 - 1;
+        pivotY = pivotY * 2 - 1;
+        
         vector3.z = 90;
+        vector3 -= new Vector3(pivotX * _distance, pivotY * _distance, 0);
+        
         _rectTransform.position = vector3;
 
     }

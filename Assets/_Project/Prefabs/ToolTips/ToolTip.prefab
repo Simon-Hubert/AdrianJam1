@@ -92,10 +92,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Left: 30
+    m_Right: 30
+    m_Top: 30
+    m_Bottom: 30
   m_ChildAlignment: 0
   m_Spacing: 15
   m_ChildForceExpandWidth: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 500
+  m_PreferredWidth: 750
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -154,3 +154,4 @@ MonoBehaviour:
   _titleTipsPrefab: {fileID: 3046511306946253562, guid: d370695b4fb25e642b22e5f85b3c6c0c, type: 3}
   _tipPrefab: {fileID: 3215182967862761104, guid: ad89268b0b5d721469981b114b0e91af, type: 3}
   _tagTipsPrefab: {fileID: 3215182967862761104, guid: ad89268b0b5d721469981b114b0e91af, type: 3}
+  _distance: 0.5
