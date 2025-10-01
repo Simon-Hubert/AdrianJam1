@@ -13,7 +13,7 @@ public class ArticleTagEffect : ArticleAreaEffectBase
         return (article, grid) =>
         {
             foreach (Article art in GridUtils.GetArticlesAt(_targetArea)(grid, article)) {
-                if ((art.CurrentTags & _targetTag) != _targetTag || art == article) {
+                if ((art.CurrentTags & _targetTag) == 0 || art == article) {
                     continue;
                 }
 
