@@ -29,6 +29,22 @@ public class ArticleEffect : ArticleAreaEffectBase
             }
         };
     }
+    
+    public override ToolTipInfo[] GetToolTipInfo() {
+        ToolTipInfo toolTip = new ToolTipInfo();
+        toolTip.Text = ToolTipConfig.GetTargetingString(_targetArea, _targetTag);
+        switch (_operation) {
+            case TypeOfEffect.ADD:
+                toolTip.Text += $"gagnent {_value} electeurs.";
+                break;
+            case TypeOfEffect.MULTIPLY:
+                toolTip.Text += $"multiplient leurs electeurs par {_value}.";
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+        return new[] { toolTip };
+    }
 
     private void AddValueTo(Article article) {
         if (_definitive) {

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Deck1
   m_EditorClassIdentifier: 
   _baseDeck:
-  - {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-  - {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-  - {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+  - {fileID: 7654160187185397694, guid: f9680ddf5512f4a29b9eb86bed14addc, type: 3}
+  - {fileID: 4440006255101428872, guid: afede99f9493d4798b33c531780c1733, type: 3}
+  - {fileID: 6277971873243890118, guid: b1cd57480874240e19c5f60d1e51811b, type: 3}

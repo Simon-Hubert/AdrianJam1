@@ -3,7 +3,7 @@ using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public abstract class ArticleEffectBase : MonoBehaviour
+public abstract class ArticleEffectBase : MonoBehaviour, IToolTipable
 {
     public enum TypeOfEffect
     {
@@ -22,4 +22,6 @@ public abstract class ArticleEffectBase : MonoBehaviour
     public abstract ArticleExecuteEffect GetEffect();
     
     public bool IsOriginal => isOriginal;
+
+    public abstract ToolTipInfo[] GetToolTipInfo();
 }
