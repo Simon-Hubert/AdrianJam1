@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "ArticleData", menuName = "ArticleData")]
+[CreateAssetMenu(fileName = "ArticleData", menuName = "ArticleShape")]
 public class ArticleShape : ScriptableObject
 {
     #region Shape
