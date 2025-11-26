@@ -11,12 +11,21 @@ public class ToolTip : MonoBehaviour
 
     [SerializeField] private float _distance;
 
+    public static ToolTip instance;
+
     private RectTransform _rectTransform;
     
     private readonly List<GameObject> _toolTips = new List<GameObject>();
 
     private void Awake() {
+        if (instance) {
+            Debug.Log("Y a un Tooltip de trop dans cette ville");
+            Destroy(this);
+        }
+        instance = this;
+        
         _rectTransform = GetComponent<RectTransform>();
+        Hide();
     }
 
     public void Show(ToolTipInfo[] infos) {

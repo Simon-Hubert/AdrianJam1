@@ -5,19 +5,13 @@ using UnityEngine.EventSystems;
 
 public class ToolTipTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private ToolTip tt;
-    
-    private void Awake() {
-        tt = FindFirstObjectByType<ToolTip>();
-    }
 
     public void OnPointerEnter(PointerEventData eventData) {
-        tt?.Show(GetAllToolTipsInfo());
+        ToolTip.instance?.Show(GetAllToolTipsInfo());
     }
     
     public void OnPointerExit(PointerEventData eventData) {
-        tt?.Hide();
-
+        ToolTip.instance?.Hide();
     }
 
     private ToolTipInfo[] GetAllToolTipsInfo() {
