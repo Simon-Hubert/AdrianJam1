@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8940303881551644547
+--- !u!1001 &3850414441943308010
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13,12 +13,12 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-      propertyPath: _targetTag
-      value: 258
-      objectReference: {fileID: 0}
-    - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _targetArea
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _targetSelf
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_Enabled
@@ -26,30 +26,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _name
-      value: Trop de taxes pour les riches !
+      value: La grande muraille de France
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _shape
       value: 
-      objectReference: {fileID: 11400000, guid: 1635c8b477dd32442917f43c72eefce8, type: 2}
+      objectReference: {fileID: 11400000, guid: 255549a2e79811146876834f78f78c58, type: 2}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
-      value: 1282
+      value: 32778
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseValue
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _description
-      value: 'Ouin ouin ouin! Snif snif ! Ouiiiiiiiiiin ! '
+      value: "Tous contre l\u2019envahisseur !!! "
       objectReference: {fileID: 0}
-    - target: {fileID: 4297976473617478942, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _tagsToAdd
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _targetTag
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _definitive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _targetSelf
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4751655307692265135, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
@@ -98,10 +106,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574213724254568145, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_Name
-      value: Trop_taxe_pour_les_riches
+      value: La grande muraille de France1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4297976473617478942, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

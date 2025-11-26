@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8940303881551644547
+--- !u!1001 &395862953182500003
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _value
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-      propertyPath: _targetTag
-      value: 258
+      value: -9999
       objectReference: {fileID: 0}
     - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _targetArea
@@ -26,31 +22,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _name
-      value: Trop de taxes pour les riches !
+      value: "Du bon shit sa m\xE8re"
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _shape
       value: 
-      objectReference: {fileID: 11400000, guid: 1635c8b477dd32442917f43c72eefce8, type: 2}
+      objectReference: {fileID: 11400000, guid: 3142e8f0ee9c3524f878525529341bca, type: 2}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
-      value: 1282
+      value: 4194321
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseValue
-      value: 200
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _description
-      value: 'Ouin ouin ouin! Snif snif ! Ouiiiiiiiiiin ! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297976473617478942, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      value: " Mise en place d\u2019une autorit\xE9 publique comp\xE9tente d\u2019analyse
+        chimique  pour lutter contre l\u2019omnipr\xE9sence de vieux shit qui pu
+        sa m\xE8re dans nos rues."
       objectReference: {fileID: 0}
     - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-      propertyPath: _definitive
-      value: 1
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4751655307692265135, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_Enabled
@@ -98,10 +92,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574213724254568145, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_Name
-      value: Trop_taxe_pour_les_riches
+      value: Du bon shit samer
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4297976473617478942, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

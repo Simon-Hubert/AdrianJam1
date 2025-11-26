@@ -9,12 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 990fce1908c316d4ea499a8bd6782428, type: 3}
-  m_Name: M
+  m_Script: {fileID: 11500000, guid: deb7245d520a29d46998d20bca341d85, type: 3}
+  m_Name: +100 def
   m_EditorClassIdentifier: 
-  _columns: 2
-  _rows: 3
-  _shape:
-  - column: 0101
-  - column: 0100
-  - column: 0101
+  _type: 0
+  targetArea: 0
+  targetTag: 0
+  targetSelf: 0
+  tagsToRemove: 0
+  tagsToAdd: 0
+  operation: 0
+  floatValue: 0
+  effect: {fileID: 0}
+  value: 100
+  definitive: 1

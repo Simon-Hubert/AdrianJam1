@@ -22,16 +22,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _definitive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _targetArea
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _name
       value: Passe immigration
       objectReference: {fileID: 0}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _shape
+      value: 
+      objectReference: {fileID: 11400000, guid: a72e2e461bcdd6d40bb9de31e2ebf0a8, type: 2}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
       value: 26
@@ -52,6 +60,14 @@ PrefabInstance:
     - target: {fileID: 4297976473617478942, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _targetArea
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _definitive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751655307692265135, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -95,7 +111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574213724254568145, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_Name
-      value: ArticleBase Variant
+      value: Pass_immigration
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4297976473617478942, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}

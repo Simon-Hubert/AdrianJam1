@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8940303881551644547
+--- !u!1001 &3635386621797984929
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,47 +10,53 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _value
-      value: 50
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _operation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _targetTag
-      value: 258
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _targetArea
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _targetSelf
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _effect
+      value: 
+      objectReference: {fileID: 11400000, guid: 831b8f93224d1a042b1c9ecb31ba67ba, type: 2}
+    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _targetTag
+      value: 2097152
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _name
-      value: Trop de taxes pour les riches !
+      value: 'Distributeur de bonheur pour nos futurs cerveaux! '
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _shape
       value: 
-      objectReference: {fileID: 11400000, guid: 1635c8b477dd32442917f43c72eefce8, type: 2}
+      objectReference: {fileID: 11400000, guid: 607c9308b2f51064c89640c8c818bbf1, type: 2}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
-      value: 1282
+      value: 3145793
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseValue
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _description
-      value: 'Ouin ouin ouin! Snif snif ! Ouiiiiiiiiiin ! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4297976473617478942, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
-      propertyPath: _definitive
-      value: 1
+      value: " pour lutter contre la pr\xE9carit\xE9 \xE9tudiante, nous proposons
+        l\u2019installation de distributeurs de 86 en libre service dans les universit\xE9s
+        de Nanterre, la Sorbonne et Cergy."
       objectReference: {fileID: 0}
     - target: {fileID: 4751655307692265135, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_Enabled
@@ -98,10 +104,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574213724254568145, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_Name
-      value: Trop_taxe_pour_les_riches
+      value: Distributeur de bonheur pour nos futurs cerveaux!
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4297976473617478942, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
