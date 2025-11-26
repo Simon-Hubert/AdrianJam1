@@ -21,6 +21,10 @@ PrefabInstance:
       value: Pour une droite de pauvre
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _shape
+      value: 
+      objectReference: {fileID: 11400000, guid: 305921c62b25fd047ba7f33783ee32e2, type: 2}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
       value: 18
       objectReference: {fileID: 0}

@@ -33,6 +33,10 @@ PrefabInstance:
       value: Suppression des bancs
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _shape
+      value: 
+      objectReference: {fileID: 11400000, guid: 515b51c0512a4694d9c2296f68242a7f, type: 2}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
       value: 4114
       objectReference: {fileID: 0}

@@ -37,6 +37,10 @@ PrefabInstance:
       value: "Plus de frites \xE0 la cantine !"
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _shape
+      value: 
+      objectReference: {fileID: 11400000, guid: d3a10ced726663b42a60d7155dfd6473, type: 2}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
       value: 34
       objectReference: {fileID: 0}

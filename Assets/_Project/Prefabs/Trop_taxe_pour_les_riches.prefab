@@ -29,6 +29,10 @@ PrefabInstance:
       value: Trop de taxes pour les riches !
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _shape
+      value: 
+      objectReference: {fileID: 11400000, guid: 1635c8b477dd32442917f43c72eefce8, type: 2}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
       value: 1282
       objectReference: {fileID: 0}

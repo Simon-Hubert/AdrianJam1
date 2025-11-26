@@ -37,6 +37,10 @@ PrefabInstance:
       value: Passe immigration
       objectReference: {fileID: 0}
     - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _shape
+      value: 
+      objectReference: {fileID: 11400000, guid: a72e2e461bcdd6d40bb9de31e2ebf0a8, type: 2}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: _baseTags
       value: 26
       objectReference: {fileID: 0}
