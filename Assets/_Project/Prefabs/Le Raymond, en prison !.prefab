@@ -8,6 +8,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _effect
+      value: 
+      objectReference: {fileID: 11400000, guid: 831b8f93224d1a042b1c9ecb31ba67ba, type: 2}
+    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _targetTag
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _definitive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _targetArea
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _name
+      value: 'Le Raymond, en prison !  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _baseTags
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _description
+      value: " J\u2019\xE9tais au PMU avec le raymond l\u2019aut\u2019jour l\xE0,
+        et v\u2019lati pas qu\u2019il a piqu\xE9 ma bi\xE8re le salopiaud, et la
+        j\u2019ui dit \u201Cba alors Raymond l\u2019a soif ?\u201D et qu\u2019est
+        c\u2019qui m\u2019r\xE9pond c\u2019te forband ? \u201CTa m\xE8re t\u2019as 
+        fient\xE9  Jos\xE9\u201D y m\xE9rite la taule le Raymond  c\u2019est mou\xE9
+        que j\u2019vous l\u2019dis"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +91,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574213724254568145, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
       propertyPath: m_Name
-      value: ArticleBase (1) Variant
+      value: Le Raymond, en prison !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &395862953182500003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _value
+      value: -9999
+      objectReference: {fileID: 0}
+    - target: {fileID: -9096153329849667778, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _targetArea
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337475318638537396, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _name
+      value: "Du bon shit sa m\xE8re"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _baseTags
+      value: 4194321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _baseValue
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472453248826748828, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: _description
+      value: " Mise en place d\u2019une autorit\xE9 publique comp\xE9tente d\u2019analyse
+        chimique  pour lutter contre l\u2019omnipr\xE9sence de vieux shit qui pu
+        sa m\xE8re dans nos rues."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519184264546524276, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751655307692265135, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006425156910396809, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8574213724254568145, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
+      propertyPath: m_Name
+      value: Du bon shit samer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f5c2b0a4029b8754da088c8720ad530f, type: 3}
