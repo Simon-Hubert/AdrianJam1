@@ -60,6 +60,7 @@ public class Article : MonoBehaviour, IToolTipable
     [ShowNonSerializedField] private int _value;
     [ShowNonSerializedField] private Tags _tags;
 
+    public string Name => _name;
 
     public ArticleShape Shape => _shape;
     public (int i, int j) GridPos => _gridPos;
