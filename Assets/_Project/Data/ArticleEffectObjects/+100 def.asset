@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deb7245d520a29d46998d20bca341d85, type: 3}
-  m_Name: -100
+  m_Name: +100 def
   m_EditorClassIdentifier: 
   _type: 0
   targetArea: 0
@@ -21,5 +21,5 @@ MonoBehaviour:
   operation: 0
   floatValue: 0
   effect: {fileID: 0}
-  value: -100
-  definitive: 0
+  value: 100
+  definitive: 1
