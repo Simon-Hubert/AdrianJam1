@@ -13,7 +13,7 @@ public class ArticleEffect : ArticleAreaEffectBase
         return (article, grid) =>
         {
             foreach (Article art in GridUtils.GetArticlesAt(_targetArea)(grid, article)) {
-                if ((art.CurrentTags & _targetTag) != _targetTag || art == article) {
+                if ((art.CurrentTags & _targetTag) == 0 || art == article) {
                     continue;
                 }
                 switch (_operation) {
@@ -28,6 +28,22 @@ public class ArticleEffect : ArticleAreaEffectBase
                 }
             }
         };
+    }
+    
+    public override ToolTipInfo[] GetToolTipInfo() {
+        ToolTipInfo toolTip = new ToolTipInfo();
+        toolTip.Text = ToolTipConfig.GetTargetingString(_targetArea, _targetTag);
+        switch (_operation) {
+            case TypeOfEffect.ADD:
+                toolTip.Text += $"gagnent {_value} electeurs.";
+                break;
+            case TypeOfEffect.MULTIPLY:
+                toolTip.Text += $"multiplient leurs electeurs par {_value}.";
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+        return new[] { toolTip };
     }
 
     private void AddValueTo(Article article) {

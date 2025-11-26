@@ -13,12 +13,20 @@ public class ArticleAddEffectEffect : ArticleAreaEffectBase
         return (article, grid) =>
         {
             foreach (Article art in GridUtils.GetArticlesAt(_targetArea)(grid, article)) {
-                if ((art.CurrentTags & _targetTag) != _targetTag || art == article) {
+                if ((art.CurrentTags & _targetTag) == 0 || art == article) {
                     continue;
                 }
                 _effect.AddNewEffectTo(art, _definitive);
             }
         };
+    }
+    
+    public override ToolTipInfo[] GetToolTipInfo() {
+        ToolTipInfo toolTip = new ToolTipInfo();
+        toolTip.Text = ToolTipConfig.GetTargetingString(_targetArea, _targetTag);
+        toolTip.Text += "gagnent l'effet : \"";
+        toolTip.Text += _effect.GetToolTipString() + "\"";
+        return new[] { toolTip };
     }
 
     public void Init(AreaOfEffect aoe, Tags targetTags, bool targetSelf, ArticleEffectObject effect, bool definitive, bool def) {

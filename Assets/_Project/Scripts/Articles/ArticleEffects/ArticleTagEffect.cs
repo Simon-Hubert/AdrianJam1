@@ -13,7 +13,7 @@ public class ArticleTagEffect : ArticleAreaEffectBase
         return (article, grid) =>
         {
             foreach (Article art in GridUtils.GetArticlesAt(_targetArea)(grid, article)) {
-                if ((art.CurrentTags & _targetTag) != _targetTag || art == article) {
+                if ((art.CurrentTags & _targetTag) == 0 || art == article) {
                     continue;
                 }
 
@@ -30,6 +30,24 @@ public class ArticleTagEffect : ArticleAreaEffectBase
                 
             }
         };
+    }
+    public override ToolTipInfo[] GetToolTipInfo() {
+        ToolTipInfo toolTip = new ToolTipInfo();
+        toolTip.Text = ToolTipConfig.GetTargetingString(_targetArea, _targetTag);
+        if (!_tagsToRemove.Equals(Tags.Aucun)) {
+            toolTip.Text += "perdent les tags " + ToolTipConfig.GetTagString(_tagsToRemove);
+        }
+
+        if (!_tagsToRemove.Equals(Tags.Aucun) && !_tagsToAdd.Equals(Tags.Aucun)) {
+            toolTip.Text += " et ";
+        }
+        
+        if (!_tagsToAdd.Equals(Tags.Aucun)) {
+            toolTip.Text += "gagnent les tags " + ToolTipConfig.GetTagString(_tagsToAdd);
+        }
+
+        toolTip.Text += ".";
+        return new[] { toolTip };
     }
 
     public void Init(AreaOfEffect aoe, Tags targetTags, bool targetSelf, Tags tagsToAdd, Tags tagsToRemove, bool definitive, bool def) {
